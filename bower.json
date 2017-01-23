@@ -1,0 +1,21 @@
+{
+  "name": "learning-symfony",
+  "homepage": "https://github.com/H-L/learning-symfony",
+  "authors": [
+    "H-L <hadrien.lepoutre@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/assets/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
