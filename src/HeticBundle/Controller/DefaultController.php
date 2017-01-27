@@ -4,14 +4,18 @@ namespace HeticBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
     /**
      * @Route("/")
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
-        return $this->render('HeticBundle:Default:index.html.twig');
+        $studentRepo = $this->getDoctrine()->getRepository('HeticBundle:Student');
+        return $this->render('student/unemethode.html.twig', [
+            'students' => $studentRepo->uneMethode(),
+        ]);
     }
 }

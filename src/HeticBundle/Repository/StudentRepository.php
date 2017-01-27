@@ -10,4 +10,12 @@ namespace HeticBundle\Repository;
  */
 class StudentRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function uneMethode()
+    {
+        $query = $this->createQueryBuilder('student_repository')
+            ->addOrderBy('student_repository.dateOfBirth', 'DESC')
+            ->getQuery()
+        ;
+        return $query->getResult();
+    }
 }
