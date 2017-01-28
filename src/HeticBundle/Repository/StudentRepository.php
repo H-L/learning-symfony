@@ -18,4 +18,10 @@ class StudentRepository extends \Doctrine\ORM\EntityRepository
         ;
         return $query->getResult();
     }
+
+    public function displayAges ()
+    {
+        $data = $this->findAll();
+        return $data;
+    }
 }
