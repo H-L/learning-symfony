@@ -14,8 +14,6 @@ class TimeIsOnMySide
     public function getAge(\DateTime $datetime)
     {
         $interval = $datetime->diff(new \DateTime('now'));
-//        dump($interval);
-//        die();
         return $interval->y;
     }
 }
