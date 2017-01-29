@@ -64,7 +64,7 @@ alias sfc= "php bin/console"
 You can easily generate a bundle with the Symfony CLI with the command :
 `php bin/console generate:bundle` and then follow the Bundle Assistant instructions.
 
-Create Services
+## Create Services
 1. First create `YourBundle/Services/YourClass.php` and declare its namespace (which typically would be `namespace HeticBundle\Services;`)
 2. Then create the methods you want to reuse later in YourClass.
 3. Declare YourClass
