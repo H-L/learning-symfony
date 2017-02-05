@@ -9,13 +9,13 @@
             {{ student.id }}: {{ student.firstname }} {{ student.lastname }}
 
             {% if ages is defined %}
-                , age: {{ ages[student.id -1] }}
+                , age: {{ ages[student.id] }}
             {% endif %}
         </p>
     {% endfor %}
 
     {% if ages is not defined %}
-        Go to <a href="http://localhost:8000/index">http://localhost:8000/index</a> to see view with ages.
+        Go to <a href="http://localhost:8000/student">http://localhost:8000/student</a> to see view with ages.
     {% endif %}
 
 {% endblock %}

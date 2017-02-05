@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    <h1>Create a Student</h1>
+
+    {{ dump(form) }}
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Create this Student">
+    {{ form_end(form) }}
+
+{% endblock %}
